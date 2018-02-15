@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSPrint" targetNamespace="http://tempuri.org/DSPrint.xsd" xmlns:mstns="http://tempuri.org/DSPrint.xsd" xmlns="http://tempuri.org/DSPrint.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="InvManagerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InvManagerConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IVM.Properties.Settings.GlobalReference.Default.InvManagerConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InvManagerConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select te.MegerNumber ,ti.invNumber ,tc.CustomerSend ,tc.CustAddress ,tc.Addressee ,tc.CustTel,tp.CompanyName,tp.companyaddress,(select count(*) from t_ExpressDesc where MegerNumber ='SH1400000001') as countnum
+from t_CustExpAddress tc,t_Express te ,t_ExpressDesc ted,t_Invoice ti ,t_Company tp
+where te.MegerNumber =ted.MegerNumber and ted.invNumber =ti.invNumber and ti.ExpAddressId =tc.ExpAddressId and ti.CompanyId =tp.CompanyId  and te.MegerNumber ='SH1400000001'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MegerNumber" DataSetColumn="MegerNumber" />
+              <Mapping SourceColumn="invNumber" DataSetColumn="invNumber" />
+              <Mapping SourceColumn="CustomerSend" DataSetColumn="CustomerSend" />
+              <Mapping SourceColumn="CustAddress" DataSetColumn="CustAddress" />
+              <Mapping SourceColumn="Addressee" DataSetColumn="Addressee" />
+              <Mapping SourceColumn="CustTel" DataSetColumn="CustTel" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="countnum" DataSetColumn="countnum" />
+              <Mapping SourceColumn="companyaddress" DataSetColumn="companyaddress" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSPrint" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSPrint" msprop:Generator_UserDSName="DSPrint">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MegerNumber" msprop:Generator_ColumnVarNameInTable="columnMegerNumber" msprop:Generator_ColumnPropNameInRow="MegerNumber" msprop:Generator_ColumnPropNameInTable="MegerNumberColumn" msprop:Generator_UserColumnName="MegerNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="invNumber" msprop:Generator_ColumnVarNameInTable="columninvNumber" msprop:Generator_ColumnPropNameInRow="invNumber" msprop:Generator_ColumnPropNameInTable="invNumberColumn" msprop:Generator_UserColumnName="invNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerSend" msprop:Generator_ColumnVarNameInTable="columnCustomerSend" msprop:Generator_ColumnPropNameInRow="CustomerSend" msprop:Generator_ColumnPropNameInTable="CustomerSendColumn" msprop:Generator_UserColumnName="CustomerSend" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustAddress" msprop:Generator_ColumnVarNameInTable="columnCustAddress" msprop:Generator_ColumnPropNameInRow="CustAddress" msprop:Generator_ColumnPropNameInTable="CustAddressColumn" msprop:Generator_UserColumnName="CustAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Addressee" msprop:Generator_ColumnVarNameInTable="columnAddressee" msprop:Generator_ColumnPropNameInRow="Addressee" msprop:Generator_ColumnPropNameInTable="AddresseeColumn" msprop:Generator_UserColumnName="Addressee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustTel" msprop:Generator_ColumnVarNameInTable="columnCustTel" msprop:Generator_ColumnPropNameInRow="CustTel" msprop:Generator_ColumnPropNameInTable="CustTelColumn" msprop:Generator_UserColumnName="CustTel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="countnum" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncountnum" msprop:Generator_ColumnPropNameInRow="countnum" msprop:Generator_ColumnPropNameInTable="countnumColumn" msprop:Generator_UserColumnName="countnum" type="xs:int" minOccurs="0" />
+              <xs:element name="companyaddress" msprop:Generator_ColumnVarNameInTable="columncompanyaddress" msprop:Generator_ColumnPropNameInRow="companyaddress" msprop:Generator_ColumnPropNameInTable="companyaddressColumn" msprop:Generator_UserColumnName="companyaddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
