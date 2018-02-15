@@ -14,6 +14,12 @@ namespace IVM
         [STAThread]
         static void Main()
         {
+            /*此段代码完全是为了测试Github能否正常工作，与程序程序无关
+            白日依山尽，
+            黄河入海流。
+            欲穷千里目，
+            更上一层楼。             
+             */
             App.Ds = App.ConnectDB(App.GetDBConnection());
             //App.AppUser = App.UserGetByCode("admin");
             //Application.EnableVisualStyles();
