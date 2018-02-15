@@ -14,7 +14,7 @@ namespace IVM
         [STAThread]
         static void Main()
         {
-            /*此段代码完全是为了测试Github能否正常工作，与程序程序无关
+            /*此段代码完全是为了测试Github能否正常工作，与应用程序无关
             白日依山尽，
             黄河入海流。
             欲穷千里目，
