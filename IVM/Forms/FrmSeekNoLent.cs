@@ -22,9 +22,19 @@ namespace IVM
             Close();
         }
 
+        /// <summary>
+        /// 通过给定条件，查询在库未借出的凭证
+        /// 1.所有查询条件均为空，则查询所有在库未借出的凭证
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            //如果未给定查询条件，默认情况下显示所有未借出的凭证信息
+            //1.所有查询条件均为空，则查询所有在库未借出的凭证
+            if ( 0 == 0)
+            {
+
+            }
         }
     }
 }

@@ -45,7 +45,7 @@
             this.txbcustname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txbexpnumber = new System.Windows.Forms.TextBox();
-            this.txbinvnumber = new System.Windows.Forms.TextBox();
+            this.txtVoucherNum = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txbtimet = new System.Windows.Forms.TextBox();
@@ -161,7 +161,7 @@
             this.groupBox1.Controls.Add(this.txbcustname);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txbexpnumber);
-            this.groupBox1.Controls.Add(this.txbinvnumber);
+            this.groupBox1.Controls.Add(this.txtVoucherNum);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txbtimet);
@@ -204,13 +204,13 @@
             this.txbexpnumber.Size = new System.Drawing.Size(212, 22);
             this.txbexpnumber.TabIndex = 150;
             // 
-            // txbinvnumber
+            // txtVoucherNum
             // 
-            this.txbinvnumber.Location = new System.Drawing.Point(91, 28);
-            this.txbinvnumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbinvnumber.Name = "txbinvnumber";
-            this.txbinvnumber.Size = new System.Drawing.Size(241, 22);
-            this.txbinvnumber.TabIndex = 149;
+            this.txtVoucherNum.Location = new System.Drawing.Point(91, 28);
+            this.txtVoucherNum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtVoucherNum.Name = "txtVoucherNum";
+            this.txtVoucherNum.Size = new System.Drawing.Size(241, 22);
+            this.txtVoucherNum.TabIndex = 149;
             // 
             // label5
             // 
@@ -309,7 +309,7 @@
         private System.Windows.Forms.TextBox txbcustname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbexpnumber;
-        private System.Windows.Forms.TextBox txbinvnumber;
+        private System.Windows.Forms.TextBox txtVoucherNum;
         private System.Windows.Forms.ListView livserchinfo;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader1;
