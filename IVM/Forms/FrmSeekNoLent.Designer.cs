@@ -80,6 +80,7 @@
             this.toolStripButton2.Size = new System.Drawing.Size(36, 53);
             this.toolStripButton2.Text = "检索";
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripSeparator1
             // 

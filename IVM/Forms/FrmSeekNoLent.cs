@@ -21,5 +21,10 @@ namespace IVM
         {
             Close();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            //如果未给定查询条件，默认情况下显示所有未借出的凭证信息
+        }
     }
 }
