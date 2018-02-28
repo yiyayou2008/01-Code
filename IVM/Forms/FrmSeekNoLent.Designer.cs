@@ -34,13 +34,16 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.livserchinfo = new System.Windows.Forms.ListView();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txbcustname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -104,13 +107,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.livserchinfo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader1,
-            this.columnHeader7,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15,
+            this.columnHeader16,
+            this.columnHeader17,
+            this.columnHeader18,
+            this.columnHeader19,
+            this.columnHeader20});
             this.livserchinfo.FullRowSelect = true;
             this.livserchinfo.GridLines = true;
             this.livserchinfo.Location = new System.Drawing.Point(10, 190);
@@ -121,40 +127,53 @@
             this.livserchinfo.UseCompatibleStateImageBehavior = false;
             this.livserchinfo.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader6
+            // columnHeader11
             // 
-            this.columnHeader6.Text = "发票号";
-            this.columnHeader6.Width = 96;
+            this.columnHeader11.Text = "公司名称";
+            this.columnHeader11.Width = 200;
             // 
-            // columnHeader1
+            // columnHeader12
             // 
-            this.columnHeader1.Text = "快递号";
-            this.columnHeader1.Width = 100;
+            this.columnHeader12.Text = "虚拟凭证簿编号";
+            this.columnHeader12.Width = 100;
             // 
-            // columnHeader7
+            // columnHeader13
             // 
-            this.columnHeader7.Text = "邮寄日期";
-            this.columnHeader7.Width = 85;
+            this.columnHeader13.Text = "凭证编号";
+            this.columnHeader13.Width = 80;
             // 
-            // columnHeader2
+            // columnHeader14
             // 
-            this.columnHeader2.Text = "邮寄客户名称";
-            this.columnHeader2.Width = 205;
+            this.columnHeader14.Text = "凭证类型";
             // 
-            // columnHeader3
+            // columnHeader15
             // 
-            this.columnHeader3.Text = "邮寄地址";
-            this.columnHeader3.Width = 181;
+            this.columnHeader15.Text = "凭证起始日期";
+            this.columnHeader15.Width = 80;
             // 
-            // columnHeader4
+            // columnHeader16
             // 
-            this.columnHeader4.Text = "联系人";
-            this.columnHeader4.Width = 85;
+            this.columnHeader16.Text = "凭证终止日期";
+            this.columnHeader16.Width = 80;
             // 
-            // columnHeader5
+            // columnHeader17
             // 
-            this.columnHeader5.Text = "联系电话";
-            this.columnHeader5.Width = 127;
+            this.columnHeader17.Text = "档案室名称";
+            this.columnHeader17.Width = 80;
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "档案架编号";
+            this.columnHeader18.Width = 80;
+            // 
+            // columnHeader19
+            // 
+            this.columnHeader19.Text = "层号";
+            this.columnHeader19.Width = 80;
+            // 
+            // columnHeader20
+            // 
+            this.columnHeader20.Text = "操作人";
             // 
             // groupBox1
             // 
@@ -194,7 +213,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 151;
-            this.label2.Text = "所属公司：";
+            this.label2.Text = "公司代码：";
             // 
             // txbexpnumber
             // 
@@ -232,7 +251,7 @@
             // 
             // txbtimet
             // 
-            this.txbtimet.Location = new System.Drawing.Point(453, 71);
+            this.txbtimet.Location = new System.Drawing.Point(454, 71);
             this.txbtimet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbtimet.Name = "txbtimet";
             this.txbtimet.Size = new System.Drawing.Size(166, 22);
@@ -274,7 +293,7 @@
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(451, 71);
+            this.dateTimePicker3.Location = new System.Drawing.Point(454, 71);
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(213, 22);
@@ -311,13 +330,6 @@
         private System.Windows.Forms.TextBox txbexpnumber;
         private System.Windows.Forms.TextBox txtVoucherNum;
         private System.Windows.Forms.ListView livserchinfo;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txbtimet;
@@ -327,5 +339,15 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader columnHeader17;
+        private System.Windows.Forms.ColumnHeader columnHeader18;
+        private System.Windows.Forms.ColumnHeader columnHeader19;
+        private System.Windows.Forms.ColumnHeader columnHeader20;
     }
 }

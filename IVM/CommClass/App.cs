@@ -1360,6 +1360,29 @@ namespace CommClass
                 return false;
             }
         }
+
+        /// <summary>
+        /// 获取未借出的档案盒信息
+        /// </summary>
+        /// <param name="sqlcode"></param>
+        /// <returns></returns>
+        public static DataTable GetNoLentFB(string sqlcode)
+        {
+            string strcmd = "";
+
+            //需要修改完善 2018-02-28 本人先去协调益嘉物流WMS系统上线前准备事宜
+            strcmd = @"select 
+                            t_FileBox.FileBoxNumber, t_Company.CompanyCode, t_Company.CompanyName, t_voucher.VoucherNumber, t_Voucher.VoucherType, t_Voucher.BeginDate, t_Voucher.EndDate, t_User.UserName 
+                       from 
+                            ((((t_FileBox join t_FileBoxDesc on t_FileBox.FileBoxNumber = t_FileBoxDesc.FileBoxNumber) 
+                            join t_Voucher on t_FileBoxDesc.VoucherNumber = t_Voucher.VoucherNumber) 
+                            join t_Company on t_FileBox.CompanyID = t_Company.CompanyId) 
+                            join t_User on t_FileBox.UserID = t_User.UserID)
+                            where t_Voucher.IsPutInBox = 1 and t_FileBox.LocationID = 0" + sqlcode;
+
+            DataSet dt = ds.GetRecord(strcmd);
+            return dt.Tables[0];
+        }
         #endregion
 
 
