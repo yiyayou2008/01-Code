@@ -709,7 +709,7 @@ namespace CommClass
         public static DataTable GetLocation()
         {
             string strcmd;
-            strcmd = "SELECT t_Location.LocationID as LocationID,t_Company.CompanyName as CompanyName,t_Location.FileRoomName as FileroomName,t_Location.FileShelfName as FileShelfName,t_Location.FileLayerNum as FileLayerNum FROM t_Company INNER JOIN t_Location ON t_Company.CompanyId = t_Location.CompanyID";
+            strcmd = "SELECT t_Location.LocationID as LocationID,t_Company.CompanyName as CompanyName,t_Location.FileRoomName as FileroomName,t_Location.FileShelfName as FileShelfName,t_Location.FileLayerName as FileLayerName FROM t_Company INNER JOIN t_Location ON t_Company.CompanyId = t_Location.CompanyID";
             DataSet dt = ds.GetRecord(strcmd);
             return dt.Tables[0];
         }

@@ -55,7 +55,7 @@ namespace IVM
                 li.SubItems.Add(row["CompanyName"].ToString());
                 li.SubItems.Add(row["FileRoomName"].ToString());
                 li.SubItems.Add(row["FileShelfName"].ToString());
-                li.SubItems.Add(row["FileLayerNum"].ToString());
+                li.SubItems.Add(row["FileLayerName"].ToString());
                 livLocation.Items.Add(li);
             }
 
